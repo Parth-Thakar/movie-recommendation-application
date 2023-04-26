@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    android:weightSum="100"
+    tools:context=".MovieListActivity">
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:background="@drawable/button_background"
+        />
+    <FrameLayout
+        android:id="@+id/fragmentSpace"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/moviesButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@drawable/button_background"
+            android:text="Get Movies"
+            android:layout_margin="5dp"
+            />
+        <Button
+            android:id="@+id/recommendationButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:background="@drawable/button_background"
+            android:text="Recommended"
+            android:layout_margin="5dp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>
